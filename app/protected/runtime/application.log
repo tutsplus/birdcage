@@ -1,0 +1,452 @@
+2013/06/13 20:46:42 [error] [php] Undefined index: User (/Users/Jeff/Sites/yii/geo/protected/modules/user/controllers/ProfileController.php:42)
+Stack trace:
+#0 /Users/Jeff/Sites/yii/framework/web/CController.php(286): ProfileController->runAction()
+#1 /Users/Jeff/Sites/yii/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#2 /Users/Jeff/Sites/yii/framework/web/CWebApplication.php(282): ProfileController->run()
+#3 /Users/Jeff/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/Jeff/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/Jeff/Sites/yii/geo/index.php(9): CWebApplication->run()
+REQUEST_URI=/yii/geo/user/profile/edit
+2013/06/13 20:46:51 [error] [php] Undefined index: User (/Users/Jeff/Sites/yii/geo/protected/modules/user/controllers/ProfileController.php:42)
+Stack trace:
+#0 /Users/Jeff/Sites/yii/framework/web/CController.php(286): ProfileController->runAction()
+#1 /Users/Jeff/Sites/yii/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#2 /Users/Jeff/Sites/yii/framework/web/CWebApplication.php(282): ProfileController->run()
+#3 /Users/Jeff/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/Jeff/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/Jeff/Sites/yii/geo/index.php(9): CWebApplication->run()
+REQUEST_URI=/yii/geo/user/profile/edit
+2013/06/13 20:47:16 [error] [php] Undefined index: User (/Users/Jeff/Sites/yii/geo/protected/modules/user/controllers/ProfileController.php:42)
+Stack trace:
+#0 /Users/Jeff/Sites/yii/framework/web/CController.php(286): ProfileController->runAction()
+#1 /Users/Jeff/Sites/yii/framework/web/CController.php(265): ProfileController->runActionWithFilters()
+#2 /Users/Jeff/Sites/yii/framework/web/CWebApplication.php(282): ProfileController->run()
+#3 /Users/Jeff/Sites/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /Users/Jeff/Sites/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#5 /Users/Jeff/Sites/yii/geo/index.php(9): CWebApplication->run()
+REQUEST_URI=/yii/geo/user/profile/edit
+2013/06/18 13:49:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'geodev.#sql-2dcf_2e' (errno: 150). The SQL statement executed was: ALTER TABLE `geo_transit_stop` ADD CONSTRAINT `fk_transit_stop_route_id` FOREIGN KEY (`route_id`) REFERENCES `geo_transit_route` (`id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2013/06/18 13:51:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'geo_transit_stop' already exists. The SQL statement executed was: CREATE TABLE `geo_transit_stop` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`route_id` INTEGER DEFAULT 0,
+	`place_id` INTEGER DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2013/06/18 13:52:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'geodev.#sql-2dcf_45' (errno: 150). The SQL statement executed was: ALTER TABLE `geo_transit_stop` ADD CONSTRAINT `fk_transit_stop_route_id` FOREIGN KEY (`route_id`) REFERENCES `geo_transit_route` (`id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2013/06/18 13:55:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1025 Error on rename of './geodev/geo_transit_stop' to './geodev/#sql2-2dcf-68' (errno: 152). The SQL statement executed was: ALTER TABLE `geo_transit_stop` DROP FOREIGN KEY `fk_transit_stop_route_id`.
+2013/06/18 14:02:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'geodev.#sql-2dcf_6d' (errno: 150). The SQL statement executed was: ALTER TABLE `geo_transit_stop` ADD CONSTRAINT `fk_transit_stop_route_id` FOREIGN KEY (`route_id`) REFERENCES `geo_transit_route` (`id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2013/06/18 14:03:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'geodev.#sql-2dcf_73' (errno: 150). The SQL statement executed was: ALTER TABLE `geo_transit_stop` ADD CONSTRAINT `fk_transit_stop_route_id` FOREIGN KEY (`route_id`) REFERENCES `geo_transit_route` (`id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2013/06/18 14:04:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'geo_transit_stop' already exists. The SQL statement executed was: CREATE TABLE `geo_transit_stop` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`route_id` INTEGER DEFAULT 0,
+	`place_id` INTEGER DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2013/06/18 14:06:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'geo_transit_stop' already exists. The SQL statement executed was: CREATE TABLE `geo_transit_stop` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`route_id` INTEGER DEFAULT 0,
+	`place_id` INTEGER DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2013/06/18 14:08:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'geodev.#sql-2dcf_ab' (errno: 150). The SQL statement executed was: ALTER TABLE `geo_transit_stop` ADD CONSTRAINT `fk_transit_stop_route_id` FOREIGN KEY (`route_id`) REFERENCES `geo_transit_route` (`id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2013/06/18 14:18:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'geodev.#sql-2dcf_ce' (errno: 150). The SQL statement executed was: ALTER TABLE `geo_transit_stop` ADD CONSTRAINT `fk_transit_stop_route_id` FOREIGN KEY (`route_id`) REFERENCES `geo_transit_route` (`id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2013/06/18 14:19:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'geo_transit_stop' already exists. The SQL statement executed was: CREATE TABLE `geo_transit_stop` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`route_id` INTEGER DEFAULT 0,
+	`place_id` INTEGER DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/09 18:59:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 18:59:40 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:09:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'geo_users' already exists. The SQL statement executed was: CREATE TABLE `geo_users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(20) NOT NULL DEFAULT '',
+	`password` varchar(128) NOT NULL DEFAULT '',
+	`email` varchar(128) NOT NULL DEFAULT '',
+	`activkey` varchar(128) NOT NULL DEFAULT '',
+	`createtime` int(10) NOT NULL DEFAULT 0,
+	`lastvisit` int(10) NOT NULL DEFAULT 0,
+	`superuser` int(1) NOT NULL DEFAULT 0,
+	`status` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB CHARSET=utf8.
+2014/09/09 19:12:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:12:04 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:13:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:13:26 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:15:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:15:30 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:17:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:17:04 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:17:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:17:29 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:21:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'geo_users' already exists. The SQL statement executed was: CREATE TABLE `geo_users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(20) NOT NULL DEFAULT '',
+	`password` varchar(128) NOT NULL DEFAULT '',
+	`email` varchar(128) NOT NULL DEFAULT '',
+	`activkey` varchar(128) NOT NULL DEFAULT '',
+	`createtime` int(10) NOT NULL DEFAULT 0,
+	`lastvisit` int(10) NOT NULL DEFAULT 0,
+	`superuser` int(1) NOT NULL DEFAULT 0,
+	`status` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB CHARSET=utf8.
+2014/09/09 19:21:32 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:21:33 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:63)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 19:22:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 19:22:49 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. (/Users/Jeff/Sites/twitter/app/protected/modules/user/models/User.php:64)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/base/CModel.php(260): User->createValidators()
+#1 /Users/Jeff/Sites/twitter/framework/base/CModel.php(158): User->getValidators()
+#2 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(202): User->validate()
+#3 /Users/Jeff/Sites/twitter/app/protected/modules/user/migrations/m110805_153437_installYiiUser.php(112): m110805_153437_installYiiUser->readStdinUser()
+#4 /Users/Jeff/Sites/twitter/framework/db/CDbMigration.php(50): m110805_153437_installYiiUser->safeUp()
+#5 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(389): m110805_153437_installYiiUser->up()
+#6 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#7 unknown(0): MigrateCommand->actionUp()
+#8 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#9 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#10 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#11 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#12 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#13 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#14 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/09 12:24:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 15:20:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 15:34:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.geo_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `geo_migration`.
+2014/09/09 16:43:44 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tw_migration`.
+2014/09/11 15:26:00 [error] [php] include(m140911_221448_create_tweet_table.php): failed to open stream: No such file or directory (/Users/Jeff/Sites/twitter/framework/YiiBase.php:421)
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(433): spl_autoload_call()
+#1 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(388): MigrateCommand->instantiateMigration()
+#2 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(113): MigrateCommand->migrateUp()
+#3 unknown(0): MigrateCommand->actionUp()
+#4 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#5 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): MigrateCommand->run()
+#6 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#7 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#8 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CConsoleApplication->run()
+#9 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once()
+#10 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once()
+
+2014/09/11 15:26:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL,
+	`name` STRING DEFAULT NULL,
+	`profile_image_url` varchar(200) ' at line 7. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` STRING NOT NULL,
+	`name` STRING DEFAULT NULL,
+	`profile_image_url` varchar(200) DEFAULT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 15:26:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL,
+	`name` STRING DEFAULT NULL,
+	`profile_image_url` varchar(200) ' at line 7. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` STRING NOT NULL,
+	`name` STRING DEFAULT NULL,
+	`profile_image_url` varchar(200) DEFAULT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 15:28:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_account' doesn't exist. The SQL statement executed was: ALTER TABLE `tw_account` DROP FOREIGN KEY `fk_account`.
+2014/09/11 15:28:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL,
+	`name` STRING DEFAULT NULL,
+	`profile_image_url` STRING DEFAUL' at line 7. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` STRING NOT NULL,
+	`name` STRING DEFAULT NULL,
+	`profile_image_url` STRING DEFAULT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 15:30:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	' at line 9. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` varchar(255) NOT NULL,
+	`name` varchar(255),
+	`profile_image_url` STRING,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 15:31:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEF' at line 9. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` varchar(255) NOT NULL,
+	`name` varchar(255) NOT NULL,
+	`profile_image_url` STRING NOT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 15:32:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING NOT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEF' at line 7. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` STRING NOT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 15:32:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'STRING,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	' at line 7. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` STRING,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 19:03:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-9f9a_248' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_twitter_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/11 19:04:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-9f9a_262' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_twitter_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/11 19:05:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1051 Unknown table 'tw_twitter_user'. The SQL statement executed was: DROP TABLE `tw_twitter_user`.
+2014/09/11 19:05:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-9f9a_276' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_twitter_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/11 19:13:34 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-9f9a_2a1' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_twitter_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/11 19:17:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tw_tweet' already exists. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` varchar(255) not null,
+	`name` varchar(255) default NULL,
+	`profile_image_url` varchar(255) NOT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/11 19:18:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tw_tweet' already exists. The SQL statement executed was: CREATE TABLE `tw_tweet` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`twitter_user_id` bigint(20) unsigned NOT NULL,
+	`last_checked` TIMESTAMP DEFAULT 0,
+	`tweet_id` BIGINT(20) unsigned NOT NULL,
+	`tweet_text` TEXT NOT NULL,
+	`screen_name` varchar(255) not null,
+	`name` varchar(255) default NULL,
+	`profile_image_url` varchar(255) NOT NULL,
+	`is_rt` TINYINT DEFAULT 0,
+	`created_at` DATETIME NOT NULL DEFAULT 0,
+	`modified_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB CHARSET=utf8 COLLATE=utf8_unicode_ci.
+2014/09/12 09:52:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tw_migration`.
+2014/09/12 09:53:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-18e_28' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_tweet_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/12 09:59:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'twitter'' in /Users/Jeff/Sites/twitter/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /Users/Jeff/Sites/twitter/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /Users/Jeff/Sites/twitter/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /Users/Jeff/Sites/twitter/framework/base/CModule.php(387): CDbConnection->init()
+#3 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /Users/Jeff/Sites/twitter/framework/cli/commands/MigrateCommand.php(69): CApplication->getDb()
+#5 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommand.php(170): MigrateCommand->beforeAction('up', Array)
+#6 /Users/Jeff/Sites/twitter/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#7 /Users/Jeff/Sites/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#8 /Users/Jeff/Sites/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#9 /Users/Jeff/Sites/twitter/framework/yiic.php(33): CApplication->run()
+#10 /Users/Jeff/Sites/twitter/app/protected/yiic.php(7): require_once('/Users/Jeff/Sit...')
+#11 /Users/Jeff/Sites/twitter/app/protected/yiic(4): require_once('/Users/Jeff/Sit...')
+#12 {main}
+---
+2014/09/12 09:59:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tw_migration`.
+<<<<<<< HEAD
+2014/09/12 11:19:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tw_users' already exists. The SQL statement executed was: CREATE TABLE `tw_users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(20) NOT NULL DEFAULT '',
+	`password` varchar(128) NOT NULL DEFAULT '',
+	`email` varchar(128) NOT NULL DEFAULT '',
+	`activkey` varchar(128) NOT NULL DEFAULT '',
+	`createtime` int(10) NOT NULL DEFAULT 0,
+	`lastvisit` int(10) NOT NULL DEFAULT 0,
+	`superuser` int(1) NOT NULL DEFAULT 0,
+	`status` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB CHARSET=utf8.
+2014/09/12 11:20:15 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tw_migration`.
+2014/09/12 11:21:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-383_8cdb' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_tweet_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/12 11:24:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'twitter'' in /var/www/twitter/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /var/www/twitter/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/twitter/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/twitter/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/twitter/framework/base/CApplication.php(438): CModule->getComponent('db')
+#4 /var/www/twitter/framework/cli/commands/MigrateCommand.php(69): CApplication->getDb()
+#5 /var/www/twitter/framework/console/CConsoleCommand.php(170): MigrateCommand->beforeAction('up', Array)
+#6 /var/www/twitter/framework/console/CConsoleCommandRunner.php(67): CConsoleCommand->run(Array)
+#7 /var/www/twitter/framework/console/CConsoleApplication.php(91): CConsoleCommandRunner->run(Array)
+#8 /var/www/twitter/framework/base/CApplication.php(169): CConsoleApplication->processRequest()
+#9 /var/www/twitter/framework/yiic.php(33): CApplication->run()
+#10 /var/www/twitter/app/protected/yiic.php(7): require_once('/var/www/twitte...')
+#11 /var/www/twitter/app/protected/yiic(4): require_once('/var/www/twitte...')
+#12 {main}
+---
+2014/09/12 11:24:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tw_migration`.
+2014/09/12 11:24:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1005 Can't create table 'twitter.#sql-383_8cf8' (errno: 150). The SQL statement executed was: ALTER TABLE `tw_tweet` ADD CONSTRAINT `fk_tweet_user_id` FOREIGN KEY (`twitter_user_id`) REFERENCES `tw_twitter_user` (`twitter_user_id`) ON DELETE CASCADE ON UPDATE CASCADE.
+2014/09/12 11:27:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tw_users' already exists. The SQL statement executed was: CREATE TABLE `tw_users` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(20) NOT NULL DEFAULT '',
+	`password` varchar(128) NOT NULL DEFAULT '',
+	`email` varchar(128) NOT NULL DEFAULT '',
+	`activkey` varchar(128) NOT NULL DEFAULT '',
+	`createtime` int(10) NOT NULL DEFAULT 0,
+	`lastvisit` int(10) NOT NULL DEFAULT 0,
+	`superuser` int(1) NOT NULL DEFAULT 0,
+	`status` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB CHARSET=utf8.
+2014/09/12 11:27:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'twitter.tw_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tw_migration`.
+=======
+2014/09/15 13:18:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1553 Cannot drop index 'twitter_user_id': needed in a foreign key constraint. The SQL statement executed was: DROP INDEX `twitter_user_id` ON `tw_profile_url`.
+2014/09/15 13:19:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1553 Cannot drop index 'profile_user_id': needed in a foreign key constraint. The SQL statement executed was: DROP INDEX `profile_user_id` ON `tw_profile_url`.
+>>>>>>> fbf73d2c05e58f57f9e99fac4473950dfb879d79
